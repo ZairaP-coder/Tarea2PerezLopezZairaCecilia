@@ -30,7 +30,7 @@
     ========================================
     -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de [Tu Nombre] - Ingeniero en Tecnologías de la Información">
+    <meta name="description" content="Portfolio de Zaira Cecilia Pérez López - Licenciada en Matematicas Aplicadas y Computación">
     <title>Tu Nombre | Portfolio</title>
     
     <!-- Google Fonts -->
@@ -49,7 +49,7 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#home" class="nav__logo">
-                <span class="logo__bracket">&lt;</span>TuNombre<span class="logo__bracket">/&gt;</span>
+                <span class="logo__bracket">&lt;</span>Zaira Cecilia Pérez López<span class="logo__bracket">/&gt;</span>
             </a>
             
             <!-- Checkbox para menú móvil (CSS only) -->
@@ -99,26 +99,32 @@
         <section class="hero section" id="home">
             <div class="hero__container container">
                 <div class="hero__content">
-                    <span class="hero__greeting">¡Hola! 👋 Soy</span>
-                    <h1 class="hero__title">Tu Nombre Completo</h1>
+                    <span class="hero__greeting">¡Hola! Soy Zaira</span>
+                    <h1 class="hero__title">Zaira Cecilia Pérez López</h1>
                     <h2 class="hero__subtitle">
-                        <span class="highlight">Ingeniero de Software</span> en Crecimiento
+                        <span class="highlight">Matematica Aplicada y Computóloga</span> en Crecimiento
                     </h2>
                     <p class="hero__description">
-                        Recién egresado de Tecnologías de la Información apasionado por crear 
-                        soluciones digitales innovadoras. Combino creatividad técnica con un 
-                        enfoque orientado a resultados para transformar ideas en código funcional.
+                        A un año de egresar de la Licenciatura, apasionada de la relacion que tienen 
+                        las matematicas y la computacion, y en busca de mejorar y crear nuevas soluciones
+                        digitales.
+                        Combino creatividad técnica y metodológica con un enfoque aplicado para soluciones
+                        funcionales y optimas, brindando la mejor interpretación posible.
                     </p>
                     <!-- ERROR 1: El botón "Ver mis proyectos" no tiene estilos de botón primario
                          PISTA: Revisa las clases del botón, falta una clase -->
                     <div class="hero__buttons">
-                        <a href="#projects" class="btn">
-                            <i class="fas fa-rocket"></i> Ver mis proyectos
+                        <a href="#projects" class="btn btn--primary">
+                            <i class="fas fa-rocket">
+                                ::before
+                            </i> 
+                            Ver mis proyectos
                         </a>
                         <!-- ERROR 2: El enlace no lleva a la sección correcta
                              PISTA: El ID de la sección de contacto es "contact", verifica el href -->
-                        <a href="#contacto" class="btn btn--outline">
-                            <i class="fas fa-envelope"></i> Contáctame
+                        <a href="#contact" class="btn btn--outline">
+                            <i class="fas fa-envelope"></i> 
+                            Contáctame
                         </a>
                     </div>
                 </div>
@@ -159,8 +165,11 @@
                     <!-- ERROR 3: Esta card no tiene el icono visible
                          PISTA: Revisa el contenido del div card__icon, falta el elemento del icono -->
                     <article class="interest__card">
+                        ::before
                         <div class="card__icon">
-                            
+                            <i class="fas fa-code">
+                                ::before
+                            </i>
                         </div>
                         <h3 class="card__title">Desarrollo Web</h3>
                         <p class="card__description">
@@ -177,7 +186,7 @@
                     <!-- Card 2 -->
                     <!-- ERROR 4: Esta card no tiene los estilos de tarjeta aplicados
                          PISTA: El nombre de la clase está mal escrito, revisa la ortografía de "interest" -->
-                    <article class="interst__card">
+                    <article class="interest__card">
                         <div class="card__icon">
                             <i class="fas fa-shield-halved"></i>
                         </div>
@@ -349,7 +358,7 @@
         <!-- ERROR 5: Esta sección no tiene el contenido centrado ni con el ancho máximo
              PISTA: Falta una clase importante en el div que envuelve el contenido -->
         <section class="projects section" id="projects">
-            <div>
+            <div class="container">
                 <div class="section__header">
                     <span class="section__subtitle">Mi trabajo</span>
                     <h2 class="section__title">Proyectos Destacados</h2>
@@ -391,7 +400,7 @@
                     <!-- Project 2 -->
                     <!-- ERROR 6: Esta tarjeta de proyecto no tiene los estilos de card
                          PISTA: Falta la clase que identifica a este elemento como tarjeta de proyecto -->
-                    <article class="project">
+                    <article class="project_card">
                         <div class="project__image">
                             <div class="project__placeholder">
                                 <i class="fas fa-chart-line"></i>
@@ -414,9 +423,9 @@
                             <div class="project__tech">
                                 <!-- ERROR 7: Estos tags de tecnología no tienen el estilo correcto
                                      PISTA: Revisa la clase de los spans, debería ser "tech" -->
-                                <span class="tag">Python</span>
-                                <span class="tag">Django</span>
-                                <span class="tag">Chart.js</span>
+                                <span class="tech">Python</span>
+                                <span class="tech">Django</span>
+                                <span class="tech">Chart.js</span>
                             </div>
                         </div>
                     </article>
@@ -486,7 +495,9 @@
                                  PISTA: La clase del icono está incompleta, revisa el nombre del icono de Font Awesome -->
                             <div class="contact__item">
                                 <div class="contact__icon">
-                                    <i class="fas fa-map"></i>
+                                    <i class="fas fa-map-marker-alt">
+                                        ::before
+                                    </i>
                                 </div>
                                 <div class="contact__text">
                                     <span class="contact__label">Ubicación</span>
@@ -502,7 +513,7 @@
                                 </div>
                                 <div class="contact__text">
                                     <span class="contact__label">Disponibilidad</span>
-                                    <span class="contact__value">Disponible para trabajar</span>
+                                    <span class="contact__value contact__value--available">Disponible para trabajar</span>
                                 </div>
                             </div>
                         </div>
@@ -539,12 +550,14 @@
                 
                 <!-- ERROR 10: Uno de los íconos de redes sociales no tiene la clase correcta para estilos
                      PISTA: Revisa que todos los enlaces tengan la clase footer__social-link -->
-                <div class="footer__social">
+                <div class="footer__social-link">
                     <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                     <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
+                        <i class="fab fa-github">
+                            ::before
+                        </i>
                     </a>
                     <a href="mailto:tu@email.com" class="footer__social-link" aria-label="Email">
                         <i class="fas fa-envelope"></i>
